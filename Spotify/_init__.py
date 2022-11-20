@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = AnonXBot()
+app = spotify_Xtream_bot()
 
 # Assistant Client
 userbot = Userbot()
