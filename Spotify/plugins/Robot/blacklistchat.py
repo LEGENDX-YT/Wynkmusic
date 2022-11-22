@@ -8,7 +8,7 @@ from Spotify.misc import SUDOERS
 from Spotify.utils.database import (blacklist_chat,
                                        blacklisted_chats,
                                        whitelist_chat)
-from AnonX.utils.decorators.language import language
+from Spotify.utils.decorators.language import language
 
 # Commands
 
