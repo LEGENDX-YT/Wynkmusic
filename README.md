@@ -1,9 +1,9 @@
 <h2 align="center">
-    ──「 ꜱᴘᴏᴛɪꜰʏ ᴍᴜsɪᴄ 」──
+    ──「 𝐖𝐘𝐍𝐊 𝐌𝐔𝐒𝐈𝐂 」──
 </h2>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/b561ac6c810349f065027.jpg">
+  <img src="https://te.legra.ph/file/56e9ded352348e803b0b7.jpg">
 </p>
 
 
