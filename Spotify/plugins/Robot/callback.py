@@ -7,7 +7,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from Spotify import YouTube, app
-from Spotify.core.call import Anon
+from Spotify.core.call import Spotify
 from Spotify.misc import SUDOERS, db
 from Spotify.utils.database import (is_active_chat,
                                        is_music_playing, set_loop,
@@ -84,7 +84,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Anon.pause_stream(chat_id)
+        await Spotify.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention)
         )
@@ -95,13 +95,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await Anon.resume_stream(chat_id)
+        await Spotify.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await Anon.stop_stream(chat_id)
+        await Spotify.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_9"].format(mention)
@@ -153,7 +153,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention)
                 )
                 try:
-                    return await Anon.stop_stream(chat_id)
+                    return await Spotify.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -348,7 +348,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await Anon.seek_stream(
+            await Spotify.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
