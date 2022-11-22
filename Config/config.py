@@ -92,7 +92,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
-LOG_FILE_NAME = "anonxlogs.txt"
+LOG_FILE_NAME = "Spotifylogs.txt"
 adminlist = {}
 lyrical = {}
 chatstats = {}
@@ -105,7 +105,7 @@ START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/47cb9d9aaa0eb2
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/0c552047e58e7e59931a8.jpg",
+    "https://te.legra.ph/file/b561ac6c810349f065027.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -145,7 +145,7 @@ SOUNCLOUD_IMG_URL = getenv(
 
 YOUTUBE_IMG_URL = getenv(
     "YOUTUBE_IMG_URL",
-    "https://te.legra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/b561ac6c810349f065027.jpg",
 )
 
 SPOTIFY_ARTIST_IMG_URL = getenv(
