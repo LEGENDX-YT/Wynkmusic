@@ -7,10 +7,10 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "20583077"))
+API_HASH = getenv("API_HASH", "c6a1fabd1994a2aa81e90bb5f6d896c0")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5937939192:AAFCSQ8PaDw1zJr_WkuGpf0XcouPhppknJw")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
@@ -22,12 +22,12 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "450")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001847096572"))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "WynkMusic")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "5963288386").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
@@ -43,9 +43,9 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "")
+    "SUPPORT_CHANNEL", "Spotifyupdatebots")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "")
+    "SUPPORT_GROUP", "chit_ChatFriendschatting_Group")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
@@ -83,7 +83,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 )
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQBluUTlUu_L1-WqPlSDH6Jrj3Y4IjPihRSJ843AwJmjGOa4z4E3ZJsqU5owRDD9PQQMifLWUytvdQoPb6OvriHu3WMqJPQqkXobNl0iZB2a7T-cQf5ujc6m5drGJcbuqBpdoa48Sy50-rBCGeVYPjjDBWxjSbvxgthCa1PX62oX6HDGfOUgD3tYC-DY9LeekcY3udAhG4Td5NQJTRyOKMHJApM_kOMs9w4xT6zc4d93Kdu_1v-inSvlpqrFARyHBjBg4AuBVPS33bmyka5TcFtThr5MMYPgOYqPu_Jg6hjVibkZEQmN80-zT3oiBA8iNC01R_1J90cqGQvvWD3baOucAAAAAHjxKUIA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
