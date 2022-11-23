@@ -35,3 +35,8 @@
 <h3 align="center">
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
+
+###  ᴅᴇᴍᴏ
+
+Music bot
+
