@@ -38,5 +38,5 @@
 
 ###  ᴅᴇᴍᴏ
 
-[Music bot](https://telegram.me/Wynkmusicsbot) 
+[𝐖𝐘𝐍𝐊 𝐌𝐔𝐒𝐈𝐂](https://telegram.me/Wynkmusicsbot) 
 
