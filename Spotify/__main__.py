@@ -51,7 +51,7 @@ async def init():
     )
     await userbot.start()
     await spotify.start()
-    try
+    try:
         await Spotify.stream_call(
             "https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4"
         )
